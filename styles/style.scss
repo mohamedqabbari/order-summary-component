@@ -1,0 +1,146 @@
+//Used Colors
+///Primary Colors
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+///Neutral Colors
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+//Used Fonts
+@font-face {
+    font-family: "RedHatD";
+    src: url(../assets/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+//Most Used Classes and Styles
+.no-p-m {
+    padding: 0;
+    margin: 0;
+}
+//Page Style
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "RedHatD";
+    background-image: url(../assets/images/pattern-background-mobile.svg);
+    background-color: $pale-blue;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .card {
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        .card-img {
+            img {
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+        .card-content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 25px 0 25px 0;
+            .card-title {
+                margin: 10px 0 10px 0;
+                font-size: 1.4rem;
+                font-weight: 900;
+                color: $dark-blue;
+            }
+            .order-desc {
+                padding: 0;
+                margin: 0;
+                width: 70%;
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: $desaturated-blue;
+            }
+            .pricing-plan {
+                display: flex;
+                align-items: center;
+                width: 70%;
+                margin: 15px 0 15px;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: $very-pale-blue;
+                img {
+                    width: 40px;
+                }
+                .price {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p {
+                        font-size: 0.9rem;
+                        margin: 0px 10px 0px;
+                        &:first-of-type {
+                            font-weight: 900;
+                            color: $dark-blue;
+                        }
+                        &:last-of-type {
+                            color: $desaturated-blue;
+                        }
+                    }
+                }
+                .change-btn {
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    margin-left: auto;
+                    color: $bright-blue;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    transition: 0.2s all ease-in-out;
+                    &:hover {
+                        color: $desaturated-blue;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .complete-btn {
+                padding: 12px 15px 12px;
+                width: 70%;
+                font-weight: 700;
+                font-size: 0.9rem;
+                border-radius: 10px;
+                box-shadow: 0 10px 10px $pale-blue;
+                color: $very-pale-blue;
+                background-color: $bright-blue;
+                cursor: pointer;
+                transition: 0.2s opacity ease-in-out;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+            }
+            .cancel-btn {
+                padding: 15px;
+                font-weight: 700;
+                font-size: 0.9rem;
+                color: $desaturated-blue;
+                cursor: pointer;
+                transition: 0.2s color ease-in-out;
+                    &:hover {
+                        color: $dark-blue;
+                    }
+            }
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    body {
+        background-image: url(../assets/images/pattern-background-desktop.svg) !important;
+        .card {
+            width: 30% !important;
+        }
+    }
+}

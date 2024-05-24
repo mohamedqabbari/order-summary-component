@@ -1,0 +1,23 @@
+{
+  "name": "order-summary-component",
+  "version": "1.0.0",
+  "description": "FrontendMentor Challenge: Order Summary Component from frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass styles/style.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedqabbari/order-summary-component.git"
+  },
+  "author": "Mohammed Qabbari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedqabbari/order-summary-component/issues"
+  },
+  "homepage": "https://github.com/mohamedqabbari/order-summary-component#readme",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}

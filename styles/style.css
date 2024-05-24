@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "RedHatD";
+  src: url(../assets/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+.no-p-m {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: "RedHatD";
+  background-image: url(../assets/images/pattern-background-mobile.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .card {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+body .card .card-img img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px 20px 0 0;
+}
+body .card .card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px 0 25px 0;
+}
+body .card .card-content .card-title {
+  margin: 10px 0 10px 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+body .card .card-content .order-desc {
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+body .card .card-content .pricing-plan {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 15px 0 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+}
+body .card .card-content .pricing-plan img {
+  width: 40px;
+}
+body .card .card-content .pricing-plan .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .card .card-content .pricing-plan .price p {
+  font-size: 0.9rem;
+  margin: 0px 10px 0px;
+}
+body .card .card-content .pricing-plan .price p:first-of-type {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+body .card .card-content .pricing-plan .price p:last-of-type {
+  color: hsl(224, 23%, 55%);
+}
+body .card .card-content .pricing-plan .change-btn {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-left: auto;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+body .card .card-content .pricing-plan .change-btn:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+body .card .card-content .complete-btn {
+  padding: 12px 15px 12px;
+  width: 70%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px hsl(225, 100%, 94%);
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  transition: 0.2s opacity ease-in-out;
+}
+body .card .card-content .complete-btn:hover {
+  opacity: 0.5;
+}
+body .card .card-content .cancel-btn {
+  padding: 15px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+}
+body .card .card-content .cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-image: url(../assets/images/pattern-background-desktop.svg) !important;
+  }
+  body .card {
+    width: 30% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
